@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PPBox Countdown</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="angular.min.js"></script>
+    <script src="index.js"></script>
+  </head>
+  <body>
+  	<div ng-app="ppbbox-countdown">
+  		<div ng-controller="ppbbox-countdown-controller" class="maindiv">
+  			<h1>PPBox Countdown</h1>
+  			<!--
+	  			<h3>Agora</h3>
+	    		<h1>{{now | date : 'HH:mm:ss dd/MM/yyyy'}}</h1>
+    		-->
+    		<!-- <h3>orderDate: {{orderDate | date : 'dd/MM/yyyy'}}</h3> -->
+    		<!-- <h3>dueDate: {{dueDate | date : 'dd/MM/yyyy'}}</h3> -->
+    		<h3>Desde o pedido:</h3>
+    		<h1 class="counter">{{fromOrderDate()}}</h1>
+
+    		<h3>Até a chegada (supondo {{dueDate | date : 'dd/MM/yyyy'}}):</h3>
+    		<h1 class="counter">{{toDueDate()}}</h1>
+
+  		</div>
+    </div>
+  </body>
+</html>
