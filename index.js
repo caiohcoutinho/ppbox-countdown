@@ -3,7 +3,7 @@ var myApp = angular.module('ppbbox-countdown',[]);
 myApp.controller('ppbbox-countdown-controller', ['$scope', '$interval', function($scope, $interval) {
 
 	$scope.orderDate = new Date(2021, 8, 7, 23, 10);
-	$scope.dueDate = new Date(2021, 10, 7, 23, 10);
+	$scope.dueDate = new Date(2021, 11, 7, 23, 10);
 	$scope.now = new Date();
 
 	$scope.twoDigits = function(a){
